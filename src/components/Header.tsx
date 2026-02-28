@@ -7,6 +7,7 @@ import { Fade, Flex, Line, Row, ToggleButton } from "@once-ui-system/core";
 
 import { routes, display, person, about, blog, work, gallery } from "@/resources";
 import { ThemeToggle } from "./ThemeToggle";
+import { MegaMenu } from "./MegaMenu";
 import styles from "./Header.module.scss";
 
 type TimeDisplayProps = {
@@ -90,6 +91,12 @@ export const Header = () => {
                 <ToggleButton prefixIcon="home" href="/" selected={pathname === "/"} />
               )}
               <Line background="neutral-alpha-medium" vert maxHeight="24" />
+
+              <Row s={{ hide: true }}>
+                <MegaMenu />
+              </Row>
+              <Line background="neutral-alpha-medium" vert maxHeight="24" s={{ hide: true }} />
+
               {routes["/about"] && (
                 <>
                   <Row s={{ hide: true }}>
@@ -162,6 +169,25 @@ export const Header = () => {
                       prefixIcon="gallery"
                       href="/gallery"
                       selected={pathname.startsWith("/gallery")}
+                    />
+                  </Row>
+                </>
+              )}
+              {routes["/secrets"] && (
+                <>
+                  <Row s={{ hide: true }}>
+                    <ToggleButton
+                      prefixIcon="lock"
+                      href="/secrets"
+                      label="Secrets"
+                      selected={pathname.startsWith("/secrets")}
+                    />
+                  </Row>
+                  <Row hide s={{ hide: false }}>
+                    <ToggleButton
+                      prefixIcon="lock"
+                      href="/secrets"
+                      selected={pathname.startsWith("/secrets")}
                     />
                   </Row>
                 </>

@@ -6,7 +6,7 @@ const person: Person = {
   lastName: "Forge",
   name: `BrowserForge`,
   role: "Chromium Architecture",
-  avatar: "/images/avatar.jpg",
+  avatar: "/logo.png",
   email: "founder@browserforge.corp",
   location: "Europe/Bratislava", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["C++", "Python", "React"],
@@ -56,7 +56,7 @@ const social: Social = [
 
 const home: Home = {
   path: "/",
-  image: "/images/og/home.jpg",
+  image: "/logo.png",
   label: "Home",
   title: `BrowserForge | Cloud Orchestration`,
   description: `Building the ultimate Chromium Cloud Infrastructure`,
