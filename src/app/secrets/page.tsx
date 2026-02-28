@@ -26,7 +26,17 @@ export default function SecretsPage() {
             icon: "eye",
         },
         {
-            label: "Secure API Tunnel (Cloudflare)",
+            label: "Dashboard Repo (GitHub)",
+            url: "https://github.com/youh4ck3dme/browserforge-dashboard",
+            icon: "github",
+        },
+        {
+            label: "Investor Repo (GitHub)",
+            url: "https://github.com/youh4ck3dme/browserforge-investor",
+            icon: "github",
+        },
+        {
+            label: "Secure API Tunnel",
             url: "https://stephanie-carbon-realistic-garlic.trycloudflare.com",
             icon: "shield",
         },
@@ -47,7 +57,26 @@ export default function SecretsPage() {
             if (savedNotes) {
                 setNotes(savedNotes);
             } else {
-                setNotes("Add your private engineering notes here...\n\nExample:\n- SSH Key for VPS: root@194.182.87.6\n- Firebase Project: browserforge-corp");
+                setNotes(`🚀 BROWSERFORGE ECOSYSTEM - FINAL HANDOVER DATA
+
+[1] ENGINEERING STUDIO (DASHBOARD)
+- Live App: https://forge-builder-suite.vercel.app
+- GitHub: https://github.com/youh4ck3dme/browserforge-dashboard
+- Local Path: c:\\Users\\42195\\.gemini\\antigravity\\scratch\\forge-builder-suite
+- Secure API: https://stephanie-carbon-realistic-garlic.trycloudflare.com
+- Tech: React, Vite, Tailwind, Firestore, FastAPI
+
+[2] INVESTOR PORTFOLIO
+- GitHub: https://github.com/youh4ck3dme/browserforge-investor
+- Local Path: c:\\Users\\42195\\.gemini\\antigravity\\scratch\\browserforge-investor-landing
+- Tech: Next.js, Once UI, MDX
+
+[3] VPS INFRASTRUCTURE
+- SSH Context: root@194.182.87.6
+- Build Farm: Docker container 'browserforge-worker'
+- Artifact Space: /root/forge-builder-suite/builds
+
+STATUS: 100% DIAMOND CERTIFIED`);
             }
         }
     }, [isAuthenticated]);
