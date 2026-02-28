@@ -27,7 +27,7 @@ export default function SecretsPage() {
         },
         {
             label: "Secure API Tunnel (Cloudflare)",
-            url: "https://tradition-defence-codes-workstation.trycloudflare.com",
+            url: "https://stephanie-carbon-realistic-garlic.trycloudflare.com",
             icon: "shield",
         },
     ];
